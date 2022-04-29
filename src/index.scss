@@ -1,0 +1,64 @@
+* { 
+  box-sizing: border-box;
+}
+
+body {
+  color: #333;
+  margin: 0px;
+  --type-first: Helvetica, Arial, sans-serif;
+  --type-second: 'Spectral', Georgia;
+  --primary-color: #FFF;
+  --text-color: #333;
+  --text-color-light: #666;
+  --accent-color: #FB1;
+  --error-color: #f31;
+  --success-color: rgb(45, 255, 17); 
+  font-family: var(--type-first);
+  padding-top: 4rem;
+}
+
+h1, h2, h3, h4, p{
+  margin: 0;
+}
+
+ul, li{
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img{
+  max-width: 100%;
+  display: block;
+}
+
+button, input{
+  font-size: 1rem;
+  display: block;
+  font-family: var(--type-first);
+  color: #333;
+}
+
+.container{
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 0 1rem;
+}
+
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+.introAnimationLeft{
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animateLeft 0.3s forwards;
+}
+
+@keyframes animateLeft {
+  to{
+    opacity: 1;
+    transform: initial;
+  }
+}

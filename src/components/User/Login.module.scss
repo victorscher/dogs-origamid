@@ -1,0 +1,28 @@
+.title{
+  font-size: 3rem;
+  margin: 1rem 0;
+  line-height: 1;
+  font-family: var(--type-second);
+  font-weight: 700;
+  position: relative; 
+  z-index: 1;
+
+  &::after{
+    content: '';
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: var(--accent-color);
+    position: absolute;
+    bottom: 5px;
+    left: -5px;
+    border-radius: 2px;
+    z-index: -1;
+  }
+}
+
+.lostPassword{ 
+  display: inline-block;
+  margin: 1rem 0;
+}
+
